@@ -2,6 +2,10 @@
 
 namespace Core;
 
+use Core\Middleware\Authenticated;
+use Core\Middleware\Guest;
+use Core\Middleware\Middleware;
+
 class Router
 {
     protected $routes = [];
@@ -53,8 +57,11 @@ class Router
     public function route($uri, $method)
     {
         foreach ($this->routes as $route) {
-            return require base_path('Http/controllers/' . $route['controller']);
-        
+            if ($route['uri'] === $uri && $route['method'] === strtoupper($method)) {
+                Middleware::resolve($route['middleware']);
+
+                return require base_path('Http/controllers/' . $route['controller']);
+            }
         }
 
         $this->abort();
