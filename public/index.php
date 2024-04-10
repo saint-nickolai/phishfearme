@@ -22,6 +22,11 @@ $routes = require base_path('routes.php');
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 $method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
 
+
+view("about.view.php", [
+    'heading' => 'About Us',
+]);
+
 try {
     $router->route($uri, $method);
 } catch (ValidationException $exception) {
