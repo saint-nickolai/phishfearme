@@ -57,8 +57,6 @@ class Router
         
         }
 
-        dd('hello';)
-
         $this->abort();
     }
 
