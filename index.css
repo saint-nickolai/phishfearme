@@ -30,6 +30,7 @@
   font-family: "Verdana";
 }
 .home-text03 {
+  color: var(--dl-color-danger-700);
   font-family: "Verdana";
 }
 .home-hero {
@@ -649,9 +650,13 @@
   .home-header {
     padding: var(--dl-space-space-unit);
   }
+  .home-text {
+    font-size: 1.9em;
+  }
   .home-text03 {
     color: var(--dl-color-danger-700);
     width: auto;
+    font-size: 1.9em;
     font-family: Verdana;
   }
   .home-hero {
@@ -662,7 +667,7 @@
     padding-right: var(--dl-space-space-unit);
   }
   .home-text04 {
-    font-size: 5em;
+    font-size: 4em;
   }
   .home-stats {
     padding-top: var(--dl-space-space-twounits);
@@ -706,25 +711,25 @@
     align-self: center;
   }
   .home-container03 {
-    width: 350px;
+    width: 300px;
   }
   .home-text38 {
     width: auto;
   }
   .home-container05 {
-    width: 350px;
+    width: 300px;
   }
   .home-text41 {
     width: auto;
   }
   .home-container07 {
-    width: 350px;
+    width: 300px;
   }
   .home-text44 {
     width: auto;
   }
   .home-container09 {
-    width: 350px;
+    width: 300px;
   }
   .home-text47 {
     width: auto;
@@ -733,19 +738,19 @@
     width: 10%;
   }
   .home-container11 {
-    width: 350px;
+    width: 300px;
   }
   .home-text55 {
     width: auto;
   }
   .home-container13 {
-    width: 350px;
+    width: 300px;
   }
   .home-text58 {
     width: auto;
   }
   .home-container15 {
-    width: 350px;
+    width: 300px;
   }
   .home-text63 {
     width: auto;
